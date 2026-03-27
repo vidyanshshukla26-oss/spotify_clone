@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.svg" alt="Spotify Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="search">Search</a></li>
+                <li><a href="#" class="nav-link" data-page="library">Your Library</a></li>
+            </ul>
+            <div class="playlists">
+                <h3>Create Playlist</h3>
+                <ul class="playlist-list">
+                    <li><a href="#" class="playlist-link">Liked Songs</a></li>
+                    <li><a href="#" class="playlist-link">My Playlist #1</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for songs, artists, albums..." class="search-input">
+                </div>
+                <div class="user-profile">
+                    <span>User</span>
+                </div>
+            </header>
+            <section class="content" id="home">
+                <h2>Good afternoon</h2>
+                <div class="recently-played">
+                    <div class="card">Recently Played 1</div>
+                    <div class="card">Recently Played 2</div>
+                    <div class="card">Recently Played 3</div>
+                </div>
+                <h2>Made for you</h2>
+                <div class="playlists-grid">
+                    <div class="playlist-card">Playlist 1</div>
+                    <div class="playlist-card">Playlist 2</div>
+                    <div class="playlist-card">Playlist 3</div>
+                </div>
+            </section>
+            <section class="content hidden" id="search">
+                <h2>Search</h2>
+                <div class="search-results">
+                    <!-- Search results will be populated here -->
+                </div>
+            </section>
+            <section class="content hidden" id="library">
+                <h2>Your Library</h2>
+                <div class="library-content">
+                    <div class="library-item">Liked Songs</div>
+                    <div class="library-item">My Playlist #1</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="player">
+        <div class="now-playing">
+            <img src="logo.svg" alt="Album Art" class="album-art">
+            <div class="track-info">
+                <span class="track-title">Track Title</span>
+                <span class="artist">Artist</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="control-btn" id="prev">⏮</button>
+            <button class="control-btn" id="play-pause">▶</button>
+            <button class="control-btn" id="next">⏭</button>
+        </div>
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
